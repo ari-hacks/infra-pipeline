@@ -1,5 +1,13 @@
-# Infrastructure pipeline using Jenkins, Terraform, AWS, and Ansible
+# Infrastructure pipeline
 
+## Pipeline Features
+- [ ] Jenkins 
+  - [ ] Slack plugin 
+- [ ] Terraform 
+- [ ] AWS
+- [ ] Ansible 
+- [ ] Docker
+  
 ## Pre-requisites
 - [AWS account - free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
 - AWS CLI
