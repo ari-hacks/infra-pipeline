@@ -2,11 +2,13 @@
 
 ### Pipeline Features
 - [ ] Jenkins 
+  - [ ] Server
   - [ ] Slack plugin 
 - [ ] Terraform 
 - [ ] AWS
 - [ ] Ansible 
 - [ ] Docker
+- [ ] Terratest
 
 ## Set up
 
