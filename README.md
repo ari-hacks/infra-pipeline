@@ -15,5 +15,5 @@
 
 - Create an IAM user with programmatic access and administrator access. See detailed instructions [here](https://github.com/ari-hacks/terraform-aws-automation/blob/master/README.md)
 - Configure AWS CLI locally for development with: `aws configure`
-- Add two EC2 instances to AWS one for the Jenkins server and one for the containerized python service 
+<!-- - Add two EC2 instances to AWS one for the Jenkins server and one for the containerized python service  -->
 - Setup ssh key pair 
