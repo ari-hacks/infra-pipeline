@@ -22,6 +22,6 @@
 - [Docker](https://docs.docker.com/desktop/)
 - Python 
 
-### Local configure and deploy
+### Deploy steps
 
 
