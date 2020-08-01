@@ -1,6 +1,6 @@
 FROM python:3.8
 
-LABEL maintainer="ari -- follow me on dev.to https://dev.to/ari_hacks"
+LABEL maintainer="ari -- follow me on dev.to https://dev.to/ari_hacks | twitter @ari_hacks"
 
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
