@@ -1,3 +1,4 @@
 Configuration.md
 terraform/jenkins/.terraform
 terraform/web/.terraform
+__pycache__/

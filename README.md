@@ -9,10 +9,10 @@
   - [ ] Remote state 
 - [ ] AWS
   - [ ] Key Pair 
-  - [ ] Two Ec2 instances
+  - [ ] Two EC2 instances
 - [ ] Ansible 
   - [ ] Jenkins playbook
-  - [ ] web playbook 
+  - [ ] Web playbook 
 - [ ] Docker
   - [ ] Containerized FastApi service 
 - [ ] Terratest
