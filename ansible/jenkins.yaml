@@ -1,7 +1,7 @@
 ---
 - name: Jenkins Playbook 
-  host: jenkins 
-  task: 
+  hosts: jenkins 
+  tasks: 
 
    - name: Install Java Requirements
      apt: 
