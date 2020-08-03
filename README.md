@@ -60,7 +60,9 @@
    ```
 3. Initiate playbook
    navigate to: `\ansible`
+
    `sudo ansible-playbook jenkins.yaml`
+   
    `sudo ansible-playbook web.yaml`
 
 4. Configure Jenkins 
