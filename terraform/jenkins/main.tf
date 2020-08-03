@@ -1,17 +1,9 @@
 provider "aws" {
-    region = "us-east-1"
+    region = "us-east-2"
 }
 
-//store state in s3 bucket
-terraform {
-  backend "s3" {
-    bucket = "bucket-name"
-    key    = "terraform.tfstate"
-    region = "us-east-2"
-  }
-}
 resource "aws_instance" "jenkins_instance" {
-    ami = "ami-04b9e92b5572fa0d1"
+    ami = "ami-0a63f96e85105c6d3"
     instance_type = "t2.micro"
     key_name = "infra-key"
 
