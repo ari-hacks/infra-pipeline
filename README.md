@@ -8,7 +8,7 @@
   - [ ] AWS EC2 instance resources 
   - [ ] Remote state 
 - [ ] AWS
-  - [ ] Key Pair 
+  - [ ] Key Pair for SSH
   - [ ] Two EC2 instances
 - [ ] Ansible 
   - [ ] Jenkins playbook
@@ -30,7 +30,7 @@
 - [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [Docker](https://docs.docker.com/desktop/)
-- Python 3.8+
+- Python 3.8
 
 ### Running the service locally 
 
@@ -98,6 +98,7 @@
    terraform apply
    ```
 2. Configure Ansible host configuration 
+   
    navigate to: `\etc\ansible\host`
 
    ```INIT
@@ -107,7 +108,8 @@
    [webservers]
    ubuntu@<dns> ansible_ssh_key_private_file=~/.ssh/infra-key.pem 
    ```
-3. Initiate playbook
+3. Run Playbooks
+   
    navigate to: `\ansible`
 
    `sudo ansible-playbook jenkins.yaml`
