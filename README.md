@@ -5,7 +5,7 @@
   - [ ] Server
   - [ ] Slack plugin 
 - [ ] Terraform 
-  - [ ] Resources EC2 instances for web server and Jenkins 
+  - [ ] AWS EC2 instance resources 
   - [ ] Remote state 
 - [ ] AWS
   - [ ] Key Pair 
