@@ -34,4 +34,33 @@
 
 ### Deploy steps
 
+1. Create EC2 instances 
+   
+   navigate to: `\terraform\jenkins`
+   ```
+   > terraform init
+   > terraform plan
+   > terraform apply
+   ```
 
+   navigate to: `\terraform\web`
+   ```
+   > terraform init
+   > terraform plan
+   > terraform apply
+   ```
+2. Configure Ansible host configuration 
+   navigate to: `\etc\ansible\host`
+   ```INIT
+   #servers and key config
+   [jenkins]
+   ubuntu@<dns> ansible_ssh_key_private_file=~/.ssh/infra-key.pem
+   [webservers]
+   ubuntu@<dns> ansible_ssh_key_private_file=~/.ssh/infra-key.pem 
+   ```
+3. Initiate playbook
+   navigate to: `\ansible`
+   `sudo ansible-playbook jenkins.yaml`
+   `sudo ansible-playbook web.yaml`
+
+4. Configure Jenkins 
