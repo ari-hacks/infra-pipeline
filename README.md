@@ -5,10 +5,18 @@
   - [ ] Server
   - [ ] Slack plugin 
 - [ ] Terraform 
+  - [ ] Resources EC2 instances for web server and Jenkins 
+  - [ ] Remote state 
 - [ ] AWS
+  - [ ] Key Pair 
+  - [ ] Two Ec2 instances
 - [ ] Ansible 
+  - [ ] Jenkins playbook
+  - [ ] web playbook 
 - [ ] Docker
+  - [ ] Containerized FastApi service 
 - [ ] Terratest
+  - [ ] Infrastructure testing 
 
 ## Set up
 
