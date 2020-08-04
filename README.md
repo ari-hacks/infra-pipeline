@@ -47,11 +47,11 @@
 2. Pipenv dependency management 
    
     ```BASH
-        #run pipenv 
+      #run pipenv 
     → pipenv shell
     ```
     ```BASH
-        #install dependencies  
+      #install dependencies  
     → pipenv install
     ```
 3. [Install & Run in docker](https://hub.docker.com/) 
