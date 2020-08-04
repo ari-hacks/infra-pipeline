@@ -7,7 +7,7 @@
 - [ ] Terraform 
   - [x] AWS EC2 instance resources 
   - [ ] Remote state 
-- [ ] AWS
+- [x] AWS
   - [x] Key Pair for SSH
   - [x] Two EC2 instances
 - [x] Ansible 
@@ -117,4 +117,7 @@
 
    `sudo ansible-playbook web.yaml`
 
-4. Configure Jenkins and AWS EC2 instances
+4. [Configure Jenkins and AWS EC2 instances]()
+
+
+### Running Tests
