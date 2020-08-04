@@ -23,11 +23,13 @@
 
 ### Requirements
 - [AWS account - free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
-- [Jenkins](https://www.jenkins.io/)
 - AWS CLI
   - mac: `brew install awscli` | `aws --version`
   - windows: [instructions](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html)
   - linux: [instructions](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
+- Configure [AWS locally](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) or use [AWS vault](https://github.com/99designs/aws-vault)
+- [EC2 Key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+- [Jenkins](https://www.jenkins.io/)
 - [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [Docker](https://docs.docker.com/desktop/)
@@ -117,7 +119,7 @@
 
    `sudo ansible-playbook web.yaml`
 
-4. [Configure Jenkins and AWS EC2 instances]()
+4. Configure Jenkins and AWS EC2 instances
 
 
 ### Running Tests
