@@ -36,32 +36,32 @@
 
 1. Clone this repository and `cd` into it 
    ```BASH
-      → git clone https://github.com/ari-hacks/infra-pipeline.git
+    → git clone https://github.com/ari-hacks/infra-pipeline.git
 
-      → cd infra-pipeline
+    → cd infra-pipeline
     ```
 
     ```BASH 
-      → pytest
+    → pytest
     ```
 2. Pipenv dependency management 
    
     ```BASH
         #run pipenv 
-        → pipenv shell
+    → pipenv shell
     ```
     ```BASH
         #install dependencies  
-        → pipenv install
+    → pipenv install
     ```
 3. [Install & Run in docker](https://hub.docker.com/) 
 4. Build Docker Image 
     ```bash
-        ➜ docker build -t app .
+    ➜ docker build -t app .
     ```
 5. Start Docker container 
     ```bash
-        ➜ docker run -d --name infra-pipeline-container -p 5000:5000 app
+    ➜ docker run -d --name infra-pipeline-container -p 5000:5000 app
     ```
 6. Run the application
    ```bash 
@@ -81,21 +81,21 @@
    navigate to: `\terraform\jenkins`
 
    ```BASH
-   terraform init
+    ➜ terraform init
 
-   terraform plan
+    ➜ terraform plan
 
-   terraform apply
+    ➜ terraform apply
    ```
 
    navigate to: `\terraform\web`
 
    ```BASH
-   terraform init
+    ➜ terraform init
 
-   terraform plan
+    ➜ terraform plan
 
-   terraform apply
+    ➜ terraform apply
    ```
 2. Configure Ansible host configuration 
    
