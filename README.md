@@ -67,9 +67,9 @@
    ```INIT
    #servers and key config
    [jenkins]
-   ubuntu@<dns> ansible_ssh_key_private_file=~/.ssh/infra-key.pem
+   ubuntu@<public-dns> ansible_user=ubuntu ansible_ssh_key_private_file=~/.ssh/infra-key.pem
    [webservers]
-   ubuntu@<dns> ansible_ssh_key_private_file=~/.ssh/infra-key.pem 
+   ubuntu@<public-dns> ansible_user=ubuntu ansible_ssh_key_private_file=~/.ssh/infra-key.pem 
    ```
 3. Run Playbooks
    
