@@ -2,19 +2,20 @@
 
 ### Pipeline Features
 - [ ] Jenkins 
-  - [ ] Server
+  - [x] Server
   - [ ] Slack plugin 
 - [ ] Terraform 
-  - [ ] AWS EC2 instance resources 
+  - [x] AWS EC2 instance resources 
   - [ ] Remote state 
 - [ ] AWS
-  - [ ] Key Pair for SSH
-  - [ ] Two EC2 instances
-- [ ] Ansible 
-  - [ ] Jenkins playbook
-  - [ ] Web playbook 
-- [ ] Docker
-  - [ ] Containerized FastApi service 
+  - [x] Key Pair for SSH
+  - [x] Two EC2 instances
+- [x] Ansible 
+  - [x] Jenkins playbook
+  - [x] Web playbook 
+- [x] Docker
+  - [x] Containerized FastApi service 
+  - [x] Build & Push tagged repo to docker hub
 - [ ] Terratest
   - [ ] Infrastructure testing 
 
@@ -116,4 +117,4 @@
 
    `sudo ansible-playbook web.yaml`
 
-4. Configure Jenkins 
+4. Configure Jenkins and AWS EC2 instances
