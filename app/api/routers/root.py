@@ -6,8 +6,8 @@ router = APIRouter()
 
 @router.get("/", status_code=200)
 async def health():
-    return {"Message":'user endpoint'}
+    return {"Message":'root endpoint'}
 
 @router.get("/health-check", status_code=200)
 async def health():
-    return {"Message":'healthy user endpoint'}
+    return {"Message":'healthy root endpoint'}

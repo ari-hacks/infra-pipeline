@@ -1,5 +1,5 @@
-from fastapi import Depends, FastAPI, Header, HTTPException
-from .api.routers import users
+from fastapi import APIRouter,Depends, FastAPI, Header, HTTPException
+from .api.routers import users, root
 
 app = FastAPI(
     title="FastApi Skeleton",
@@ -7,4 +7,8 @@ app = FastAPI(
     version="1.0",
 )
 
+router = APIRouter()
+
+
+app.include_router(root.router)
 app.include_router(users.router, prefix="/users")

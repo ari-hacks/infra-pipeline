@@ -17,8 +17,9 @@
 - [x] Docker
   - [x] Containerized FastApi service 
   - [x] Build & Push tagged repo to docker hub
-- [ ] Terratest
-  - [ ] Infrastructure testing 
+- [ ] Terratest (Infrastructure testing)
+  - [ ] Docker
+  - [ ] Terraform
 
 ## Set up
 
@@ -35,6 +36,10 @@
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [Docker](https://docs.docker.com/desktop/)
 - Python 3.8
+- Go 1.14
+- [dep dependency](https://github.com/golang/dep) `brew install dep`
+- Terratest globally installed `go get -v github.com/gruntwork-io/terratest`
+`
 
 ### [Running the service locally](local-docker.md) 
 
