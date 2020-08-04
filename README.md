@@ -39,7 +39,6 @@
 - Go 1.14
 - [dep dependency](https://github.com/golang/dep) `brew install dep`
 - Terratest globally installed `go get -v github.com/gruntwork-io/terratest`
-`
 
 ### [Running the service locally](local-docker.md) 
 
