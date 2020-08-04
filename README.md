@@ -89,3 +89,8 @@
 
 
 ### Running Tests
+
+  ```BASH
+  ➜ cd test
+  ➜ go test
+  ```
