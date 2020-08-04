@@ -2,16 +2,22 @@ package tests
 
 import (
 	"fmt"
+	"log"
+	"net/http"
 	"testing"
 
 	"github.com/gruntwork-io/terratest/modules/docker"
-	http_helper "github.com/gruntwork-io/terratest/modules/http-helper"
+	"github.com/stretchr/testify/assert"
+
+	// http_helper "github.com/gruntwork-io/terratest/modules/http-helper"
 	"github.com/gruntwork-io/terratest/modules/random"
 )
 
 const (
 	HOST string = "localhost/"
 )
+
+// const url string = "localhost/:5000"
 
 func TestDockerArtifacts(t *testing.T) {
 
@@ -43,5 +49,12 @@ func TestDockerArtifacts(t *testing.T) {
 	docker.Run(t, tag, runOptions)
 
 	url := fmt.Sprintf("http://%s:%d", HOST, PORT)
-	http_helper.HttpGetWithValidation(t, url, nil, 200, RESP)
+	// http_helper.HttpGetWithValidation(t, url, nil, 200, RESP)
+	resp, err := http.Get(url)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("STATUS CODE:", resp.StatusCode)
+
+	assert.Equal(t, 200, resp.StatusCode)
 }
