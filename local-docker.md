@@ -40,4 +40,4 @@
    ➜ docker container logs -f infra-pipeline-container
    ```
 
-    [⏮️](/README.md) Back to README
+    [🔙](/) README
