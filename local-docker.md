@@ -40,4 +40,4 @@
    ➜ docker container logs -f infra-pipeline-container
    ```
 
-    [🔙](/) README
+    [🔙](https://github.com/ari-hacks/infra-pipeline) README
