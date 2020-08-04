@@ -1,9 +1,10 @@
 # Infrastructure pipeline
 
 ### Pipeline Features
-- [ ] Jenkins 
+- [x] Jenkins 
   - [x] Server
-  - [ ] Slack plugin 
+  - [ ] Slack plugin (configuration link)
+  - [ ] Integrate Github
 - [ ] Terraform 
   - [x] AWS EC2 instance resources 
   - [ ] Remote state 
