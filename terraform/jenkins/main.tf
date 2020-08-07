@@ -10,21 +10,22 @@ resource "aws_instance" "jenkins_instance" {
     tags = {
         Name = "${var.name}"
     }
-  #   provisioner "remote-exec" {
-  #   # Install Python for Ansible
-  #   #inline = ["sudo dnf -y install python"]
-
-  #   connection {
-  #     type        = "ssh"
-  #     user        = "ubuntu"
-  #     private_key = file(var.ssh_key_private)
-  #     host        = aws_instance.jenkins_instance.public_ip
-  #   }
-  # }
+    provisioner "remote-exec" {
+    # Install Python for Ansible
+    connection {
+      type        = "ssh"
+      user        = "ubuntu"
+      private_key = file(var.ssh_key_private)
+      host        = aws_instance.jenkins_instance.public_ip
+      timeout = "500s"
+    }
+      working_dir = "../../ansible"
+      inline = ["sudo ansible-playbook jenkins.yaml"]
+  }
 
   # provisioner "local-exec" {
   #   working_dir = "../../ansible"
-  #   command = "sleep 120; ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -u ubuntu --private-key ${var.ssh_key_private} jenkins.yaml"
-
+  #   # command = "sleep 120; ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -u ubuntu --private-key ${var.ssh_key_private} jenkins.yaml"
+  #   command = "ansible-playbook -u ubuntu -i ‘${aws_instance.jenkins_instance.public_dns},’ jenkins.yaml"
   # }
 }
